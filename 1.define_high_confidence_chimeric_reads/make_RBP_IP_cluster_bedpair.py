@@ -13,3 +13,5 @@ with open("%s"%filename) as infile:
 		if int(sub[6]) >= read_cutoff:
 			new_line = "\t".join([sub[0],str(int(sub[2])*10),str(int(sub[2])*10+10),sub[3],str(int(sub[5])*10),str(int(sub[5])*10+10),"cluster",sub[6],strand_dict[sub[1]],strand_dict[sub[4]]])
 			print(new_line,file=outfile)
+infile.close()
+outfile.close()
