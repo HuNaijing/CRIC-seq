@@ -50,3 +50,10 @@ with open("%s"%RBP_read_sam_file) as infile3:
         ids = "_".join(sub3[0:3])
         if ids not in need_remove_read:
             print(line3.strip("\n"),file =outfile1)
+
+infile.close()
+infile1.close()
+infile2.close()
+infile3.close()
+outfile.close()
+outfile1.close()
