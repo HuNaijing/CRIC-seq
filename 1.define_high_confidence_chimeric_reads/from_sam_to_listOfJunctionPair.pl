@@ -18,7 +18,7 @@ while(my $frag_a=<SM>){
                 my $strand_a=$sub_a[1];
                 my $strand_b=$sub_b[1];
 
-                if($id_a_info[1] ne $id_a_info[1]){     #same pair
+                if($id_a_info[1] ne $id_b_info[1]){     #same pair
                         print $frag_a,$frag_b;
                         die "did not belong to the same pair\n";
                 }
